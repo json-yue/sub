@@ -1,0 +1,296 @@
+*{
+	margin:0;
+	padding: 0;
+}
+html,body{
+	scroll-behavior: smooth;
+}
+header{
+	width: 100%;
+	height: 30px;
+	background-color: #000;
+	margin:0 auto;
+}
+main{
+	width: 100%;
+/*	background-color: #FFF8DC;*/
+}
+.main{
+	position: relative;
+	width: 1200px;
+	height: 600px;
+	margin:0 auto;
+	background-image: url(./image/bg.png);
+	background-repeat:no-repeat;
+}
+.logo{
+	width: 160px;
+	height: 160px;
+	background-color: #faaa47;
+	color: rgb(0,0,0,0.7);
+	font-size: 40px;
+	font-weight: 600;
+	text-align:center;
+	line-height: 80px;
+	border-radius:10px;
+	cursor: pointer;
+}
+.menu{
+	display: inline-block;
+	width: 160px;
+	height: 204px;
+	border-radius: 10px;
+	margin-top: 50px;
+	overflow: hidden;
+}
+.menu li{
+	display: inline-block;
+    list-style: none;
+    background-color: rgb(0,0,0,0.7);
+    border-top: 1px solid; 
+    width: 160px;
+    height: 50px;
+    color: #faaa47;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.menu .li{
+	background-color: #faaa47;
+	color: #fcdca1;
+}
+.menu .li:hover{
+	background-color: rgb(0,0,0,0.7);
+	color: #faaa47;
+}
+.wrapper{
+	position: relative;
+	float: right;
+	margin-top: 95px;
+	width: 600px;
+	height: 350px;
+	overflow: hidden;
+}
+.wrapper img{
+	transition: 1s;
+	width: 600px;
+	height: 350px;
+}
+.image:nth-child(1) img{
+	margin-left: -360px;
+}
+.image:nth-child(2) img{
+	margin-left: -320px;
+}
+.image:nth-child(3) img{
+	margin-left: -310px;
+}
+.image:nth-child(4) img{
+	margin-left: -100px;
+}
+.image{
+	position: absolute;
+	border-radius: 10px;
+	width: 150px;
+	height: 350px;
+	overflow: hidden;
+	transition: 1s;
+}
+.image:nth-child(1){
+	z-index: 4;
+	left: 0;
+}
+.image:nth-child(2){
+	z-index: 3;
+	left: 150px;
+}
+.image:nth-child(3){
+	z-index: 2;
+	left: 300px;
+}
+.image:nth-child(4){
+	z-index: 1;
+	left: 450px;
+}
+.image:hover{
+	z-index: 5;
+    width: 600px;
+    left: 0;
+}
+.image:hover img{
+	margin-left: 0;
+}
+h1{
+	position: absolute;
+	right: 0;
+	top:20px;
+    color: #d0c6ad;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 60px;
+    width: 430px;
+    cursor: pointer;
+}
+.synopsis{
+	border-radius: 10px;
+	margin-top: 88px;
+	width: 590px;
+	background-color:rgb(250,170,71,0.7); 
+	color: rgb(0,0,0,0.7);
+}
+.content{
+	width: 100%;
+	margin:50px auto;
+}
+.contents{
+	color: rgb(0,0,0,0.7);
+	width: 1200px;
+	margin:0 auto;
+	border:1px solid #fff;
+}
+.titleBorder,.predicateBorder{
+	background-image: url(./image/line.png);
+    background-repeat: repeat-x;
+    height: 20px;
+    margin: 60px 0;
+    text-align: center;
+}
+.title,.predicate{
+	display: inline-block;
+	margin-top: -30px;
+	width: 350px;
+	height: 60px;
+	border:1px solid #dedede;
+}
+.title h2,.predicate h2{
+	cursor: pointer;
+	line-height: 60px;
+	background-color: rgb(250,170,71,0.8);
+}
+.title:hover,
+.predicate:hover{
+	transform: rotate(360deg);
+	transition:all 0.7s;
+}
+.foods{
+	width: 1200px;
+	height: 450px;
+}
+.foods img{
+	transition: all 1s;
+}
+.box-1,.box-2,.box-3{
+	position: relative;
+	width: 372px;
+	height: 450px;
+	float: left;
+	cursor: pointer;
+}
+.foods .box-1{
+	padding-right: 21px;
+}
+.foods .box-2{
+	padding: 0 21px;
+}
+.foods .box-3{
+	padding-left: 21px;
+}
+.foods .img{
+	overflow: hidden;
+}
+.name{
+	margin:20px 0;
+}
+h3:hover{
+	color:#faaa47;
+}
+.foods img:hover{
+	transform: scale(1.2);
+}
+h3{
+	display: inline-block;
+    font-size: 30px;
+}
+.introduce p{
+	text-indent: 2em;
+}
+.cuisineBorder{
+	background-image: url(./image/line.png);
+    background-repeat: repeat-x;
+    height: 20px;
+    margin: 100px 0 50px;
+}
+.cuisine{
+	width: 265px;
+	border-top: 5px solid rgb(250,170,71,0.8);
+}
+.cuisine h2{
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: 600;
+}
+.cuisine h2:hover{
+	text-shadow: 30px 25px 0px #dedede;
+	transition: all 1s;
+}
+.cuisines{
+	width: 1200px;
+	height: 900px;
+}
+.cuisines .box{
+	position: relative;
+	width: 270px;
+	height: 450px;
+	float: left;
+	cursor: pointer;
+}
+.box1,.box5{
+	padding-right: 20px;
+}
+.box2,.box6{
+padding:0 20px;
+}
+.box3,.box7{
+padding:0 20px;
+}
+.box4,.box8{
+padding-left:20px;	
+}
+.cuisines img{	
+	width: 270px;
+}
+.cuisines img:hover{
+	transform: rotate(360deg);
+	transition:all 0.7s;
+}
+.predicates p{
+	text-indent: 2em;
+}
+.predicates strong{
+	text-indent: 2em;
+	color: #faaa47; 
+}
+.foot{
+	width: 1200px;
+	height: 100px;
+	margin:0 auto;
+	background-color: rgb(250,170,71,0.8);
+}
+.demo{
+	font-size: 30px;
+	float: left;
+}
+.goTop{
+	width: 120px;
+	height: 100px;
+	margin:0 auto;
+}
+.goTop a{
+	text-decoration: none;
+	color: #000;
+	font-size: 30px;
+	line-height: 100px;
+}

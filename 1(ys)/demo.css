@@ -1,0 +1,308 @@
+/*
+端午节相关
+素材来源（www.baidu.com）
+*/
+/*去除系统自带的内外边距*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*给网页整体加背景*/
+html body{
+	scroll-behavior: smooth;/*使页面平滑滚动*/
+	background: #fff url(./image/bg.jpg) repeat-x;
+}
+/*规定主体宽度，设定主体样式*/
+.main{
+	width: 1000px;	/*宽度*/
+	height: 1190px;	/*高度*/
+	margin:50px auto 20px;	/*居中，并增加一定的上下外边距*/
+	padding: 15px 0;	/*内边距*/
+	background: url(./image/bg.png)/*引入背景图片*/ repeat-y/*纵向重复*/ fixed/*使背景图片充满页面*/;	
+	background-size:100% 100%;/*使背景图片大小适应页面*/
+	border-radius: 10px; /*圆角*/
+}
+/*头部样式*/
+header{
+	border-top: 1px solid rgb(0,0,0,0);/*增加透明边框，防止margin塌陷*/
+	width: 970px;
+	height: 209px;
+	margin: 0 15px;
+	background: url(./image/head.jpg) repeat-x;
+	border-radius: 10px 10px 0 0;
+}
+header .title{
+	width: 230px;/*宽度*/
+	height: 162px;/*高度*/
+	margin: 20px 0 0 32px;/*外边距*/
+	background-color: #F5DEB3;/*背景颜色*/
+	border-radius: 10px;/*设置圆角*/
+	transform: rotate(-30deg);/*旋转*/
+	float: left;/*左浮动*/
+}
+header .title .count{
+	width: 115px;/*宽度*/
+	height: 81px;/*高度*/
+	color: #4b1c06;/*字体颜色*/
+	font-weight: bold;/*加粗*/
+    transform: rotate(30deg);/*旋转*/
+    margin-left:25px;/*外边距*/ 
+    padding: 50px;/*内边距*/
+}
+header .banner{
+	width: 300px;
+	height: 100px;
+	color: #feffb3;
+	font-size: 14px;/*字体大小*/
+	float: left;
+	margin: 70px 0 0 150px;
+}
+nav{
+	width: 1000px;
+	height: 60px;
+	padding: 0 30px;
+	margin: 0 -30px;
+	background: url(./image/nav.jpg);
+	background-size:100% 100%;	
+}
+nav ul{
+	float: right;
+	margin-right: 150px;
+}
+nav ul li{
+	cursor: pointer;/*使鼠标样式变成小手*/
+	text-align: center;/*使字体水平居中*/
+	width: 100px;
+	height: 40px;
+	line-height: 40px;/*设置行高等于父级元素高度，使其垂直居中*/
+	float: left;
+	list-style: none;/*取消无序列表前的点*/
+	background:url(./image/line.jpg) no-repeat/*不重复*/;
+}
+/*悬停改变字体颜色*/
+nav ul li:hover{
+	color: #b89329;
+}
+main{
+	margin: 0 12.5px;
+}
+.left{
+	width:275.5px;
+	height: 560px;
+	border-radius: 0 0 5px 5px;
+	background-color: #b89329;
+	float: left;
+}
+/*设置统一标题*/
+.left .title{
+	width: 245.5px;
+	height: 37px;
+	padding: 8px 0 0 30px;
+	background: url(./image/title.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.seaContent,.catContent,.aboContent{
+	width: 256.5px;
+	margin: 0 9.5px;
+	height: 100px;
+	background-color: #647a2f;
+	border-radius: 0 0 5px 5px;
+}
+/*设置搜索框样式*/
+.seaContent>form>input{
+	width: 200px;
+	height: 20px;
+	margin: 10px 20px;
+}
+.seaContent>form>p input{
+	width: 100px;
+	height: 25px;
+	margin: 5px 0 0 130px;
+}
+.categories,.about,.pic,.eg{
+	margin-top: 20px;
+}
+.catContent{
+	height: 200px;
+}
+.catContent ul{
+	color: #fff;
+	margin: 0 50px;
+}
+.catContent ul li{
+	font-weight: 600;
+	line-height: 30px;
+	cursor: pointer;
+}
+/*鼠标悬停改变字体颜色*/
+.catContent ul li:hover{
+	color:#f40;
+}
+.aboContent{
+	height: 60px;
+}
+.aboContent p{
+	color: #fff;
+	line-height: 25px;
+	margin: 0 30px;
+}
+.pic{
+	float: left;
+	margin-top: 40px;
+	width: 265.5px;
+	height: 215.5px;
+	border: 5px solid #845410;
+}
+.pic img{
+	width: 100%;
+	height: 100%;
+}
+.right{
+	color: #fff;
+	float: right;
+}
+.introduce{
+	padding: 20px;
+	width: 647px;
+	height: 200px;
+	border-radius: 5px;/*圆角*/
+	background-color: #647a2f;/*背景颜色*/
+}
+.introduce .title{
+	font-size: 20px;/*字体大小*/
+	font-weight: 700;/*加粗*/
+	border-bottom: 1px solid #fff; 
+}
+.introduce img{
+	width: 150px;/*设置图片大小*/
+	margin-top: 17px;
+	border:5px solid #333;
+
+}
+.introduce .content{
+	width: 480px;
+	height: 160px;
+	margin-top: 17px;
+	float: right;/*右浮动*/
+	line-height: 25px;/*设置行高*/
+}
+.content span{
+	cursor: pointer;
+	color: red;
+}
+.eg{
+	width: 440px;
+	height: 540px;
+	float: left;
+	background-color: #b89329;
+	border-radius: 5px;
+}
+.ex{
+	width: 205px;
+	height: 255px;
+	border-radius: 5px;
+	float: left;
+	overflow: hidden;/*超出部分隐藏*/
+}
+/*给每个子级元素设置外边距*/
+.ex:nth-child(1){
+	margin: 10px 5px 5px 10px;
+}
+.ex:nth-child(2){
+	margin: 10px 10px 5px 5px;
+}
+.ex:nth-child(3){
+	margin: 5px 5px 10px 10px;
+}
+.ex:nth-child(4){
+	margin: 5px 10px 10px 5px;
+}
+.ex .title{
+	width: 195px;
+	height: 25px;
+	padding: 5px 0 0 10px;
+	background: url(./image/ex.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.ex .text{
+	color: #000;
+	font-size: 10px;
+	width: 185px;
+	height: 210px;
+	padding: 10px;
+	background-color: #fff;
+}
+.ex img{
+	width: 175px;
+	height: 117px;
+	border: 5px solid #ccc;/*设置边框*/
+}
+.ex img:hover{
+	transform: translateY(-4px);/*元素上浮4像素*/
+	transition: 0.3s;/*动画过度0.3s*/
+	box-shadow: 0px 15px 30px rgba(0,0,0,0.1);/*阴影*/
+}
+.ex .text p{
+	text-indent: 2em;/*首行缩进*/
+}
+.news{
+	margin-top: 20px;/*上边距*/
+	width: 197px;
+	height: 500px;
+	padding: 20px;
+	float: right;/*右浮动*/
+	border-radius: 5px;
+	background-color: #b89329;
+}
+.news div{
+	cursor: pointer;
+}
+.news .first:hover,
+.news .second:hover,
+.news .third:hover,
+.news .forth:hover{
+	text-decoration: underline;/*字体下划线*/
+	color: #f40;
+}
+.news p{
+	text-indent: 2em;/*首行缩进两个字符*/
+}
+footer{
+	float: left;
+	margin: 20px 12.5px;
+	width: 975px;
+	height: 100px;
+	border-radius: 5px;
+	background-color: #b89329;
+}
+.summary{
+	float: left;
+	text-indent: 2em;
+	font-size: 14px;
+	width: 280px;
+	height: 80px;
+	padding: 10px 30px;
+}
+.information{
+	float: left;
+	width: 180px;
+	height: 60px;
+	margin-top: 10px;
+	padding: 10px 30px;
+	background:url(./image/line.jpg) repeat-y;
+}
+.other{
+    float: left;
+	width: 180px;
+	height: 60px;
+	margin-top: 10px;
+	padding: 10px 30px;
+	background:url(./image/line.jpg) repeat-y;
+}
+.other a{
+	text-decoration: none;
+	color: #000;
+}
+.other a:hover{
+	color: red;
+}

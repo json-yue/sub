@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>斐波那契数列</title>
+</head>
+<body>
+	<script>
+ var n = parseInt(window.prompt("请输入n的值："))
+ var x = 1;
+     y = 1;
+      if(n == 1 || n == 2){
+         z = x;
+     }else{
+         z = y;
+         for(i = 3; i <= n; i ++){
+             x = y;
+             y = z;
+             z = x + y;
+         } 
+      }      
+ document.write(z);   
+</script>
+</body>
+</html>

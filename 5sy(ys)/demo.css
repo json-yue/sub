@@ -1,0 +1,208 @@
+/*利用通配符去除浏览器自带的内外边距*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*头部属性*/
+header{
+	width: 100%;/*宽度*/
+	height: 100px;/*高度*/
+}
+header .logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;/*设置圆角*/
+}
+header ul{
+	width: 1200px;
+	height: 100px;
+	margin:10px auto;/*使其水平居中*/
+}
+header li{
+	float: left;/*左浮动*/
+	list-style: none;/*去除无序列表自带的属性*/
+	height: 100px;
+	width: 200px;
+	text-align: center;/*文字水平局中*/
+	line-height: 100px;/*行高等于父级元素高度，从而垂直居中*/
+	font-size: 18px;/*字体大小*/
+	cursor: pointer;/*使鼠标样式变为小手*/
+}
+/*鼠标悬停改变字体*/
+header li:hover{
+	color: orange;/*字体颜色*/
+	font-size: 22px;
+	transform: rotate(360deg);/*旋转*/
+	transition: 1s;/*1s缓动*/
+}
+nav{
+	position: relative;/*相对定位*/
+	border-top: 1px solid #fff;/*1像素的顶部边框，用来解决margin塌陷*/
+	width: 1200px;
+	height: 0;
+	margin:0 auto;
+}
+nav img{
+	position: absolute;/*绝对定位*/
+	left: 0;
+	top: 0;
+	z-index: -2;/*元素层级*/
+	width: 1200px;
+	height: 600px;
+}
+nav .img{
+	width: 120px;
+	height: 30px;
+	margin: 500px 540px 70px;/*外边距*/
+	background-color: rgb(0,0,0,0.7);/*背景颜色*/
+	border-radius: 15px;
+}
+nav .bar{
+	width: 30px;
+	height: 30px;
+	float: left;
+	border-radius: 15px;
+}
+.bar .dot{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 10px;
+	background-color: #fff;
+}
+/*鼠标悬停改变图片层级来切换图片*/
+nav img:hover{
+	z-index: -1;
+}
+nav .bar:hover .dot{
+	background-color: orange;
+}
+nav .bar:hover+ img{
+	z-index: -1;
+}
+main{
+	position: absolute;
+	top: 710px;
+	left:0;
+	right: 0;
+	margin:0 auto;
+	width: 1200px;
+}
+main.about{
+	width: 1200px;
+}
+.about h1{
+	width: 1200px;
+	text-align: center;/*文字水平局中*/
+	line-height: 100px;/*行高*/
+}
+.about h2{
+	position: absolute;
+	left: 500px;
+	top: 130px;
+	color: rgb(0,0,0,0.1);
+	font-size: 50px;
+	letter-spacing: 5px;/*字符间距*/
+}
+.about img{
+	width: 700px;
+}
+.about .count{
+	padding: 97px 0 0 40px;/*内边距*/
+	width: 420px;
+	float: right;
+	text-indent: 50px;/*首行缩进*/
+}
+.count .more{
+	width: 140px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	float: right;
+	border: 1px solid #104E8B;
+	text-indent: 0;/*清除父级对其的影响*/
+	cursor: pointer;
+}
+.count .more:hover{
+	background-color: #104E8B;
+	color: #fff;
+}
+main .title{
+	width: 1200px;
+	/*背景图片*/
+	background:url(./image/line.png) repeat-x/*使背景图片沿x轴重复*/;
+	margin-top: 100px;/*上外边距*/
+}
+.title h1{
+	width: 260px;
+	border-top: 5px solid orange;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: 600;
+	transition: all 1s;/*1s缓动*/
+}
+.title h1:hover{
+	text-shadow: 30px 25px 0px rgb(0,0,0,0.2);/*为文字添加字体阴影*/
+}
+.title .box{
+	width: 1200px;
+	height: 500px;
+	padding: 50px 0;
+}
+.imgBox{
+	color: rgb(0,0,0,0.5);
+	width: 280px;
+	height: 460px;
+	float: left;
+	padding: 10px;
+	overflow: hidden;/*超出部分隐藏*/
+	cursor: pointer;
+}
+.imgBox img{
+	width: 280px;
+	height: 380px;
+}
+.imgBox h3{
+	line-height: 40px;
+}
+.imgBox p{
+	font-size: 12px;
+}
+.imgBox h3:hover,
+.imgBox p:hover{
+	color: rgb(0,0,0,1);
+}
+.imgBox:hover{
+	transform: translateY(-4px);
+	transition: 0.3s;
+	box-shadow: 0px 15px 30px rgba(0,0,0,0.1);/*为元素添加盒子阴影*/
+}
+footer{
+	position: absolute;
+	top: 1900px;
+	left:0;
+	right: 0;
+	margin:100px auto;
+	width: 1200px;
+}
+.end_logo,.end_title,.contant{
+	float: left;
+}
+.end_logo img{
+	height: 100px;
+}
+.end_title h1{
+	width: 700px;
+	line-height: 100px;
+    text-align: center;
+}
+.end_title h1 a{
+	text-decoration: none;/*去除下划线*/
+	color: #000;
+}
+.end_title h1 a:hover{
+	color: orange;
+}
+.contant p{
+    line-height: 33.3px; 
+}

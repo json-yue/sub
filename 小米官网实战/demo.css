@@ -1,0 +1,539 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 100%;
+	height: 40px;
+	background-color: #333;
+}
+.header{
+	position: relative;
+    margin: 0 auto;
+	width: 1200px;
+	height: 40px;
+}
+.li,span{
+	float: left;
+	list-style: none;
+	line-height: 40px;
+	font-size: 12px;
+	color: #b0b0b0;
+	cursor: pointer;
+}
+span{
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	color: #424242;
+}
+.li:hover{
+	color: #fff;
+}
+.login{
+	position: absolute;
+	right: 150px;
+}
+header em{
+	float: left;
+	font-style: normal;
+	line-height: 40px;
+	font-size: 12px;
+	color: #b0b0b0;
+	cursor: pointer;
+}
+header em:hover{
+	color: #fff;
+}
+.shopping{
+	position: absolute;
+	right: 0;
+	width: 100px;
+	height: 40px;
+	background-color: #424242;
+}
+.shopping em{
+	font-style: normal;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.shopping .shopCar{
+	position: absolute;
+	right: 0;
+	width: 320px;
+	height: 100px;
+	color: #000;
+	line-height: 100px;
+	border:1px solid #f2f2f2;
+	border-top:0;
+	z-index: 999;
+	background-color: #fff;
+	transform: translateY(-100px);
+
+}
+.shopping .shopCar2{
+	position: absolute;
+	top: 40px;
+	right: 0;
+	width: 320px;
+	height: 100px;
+	overflow: hidden;
+}
+.shopCar1:hover{
+	background-color: #fff;
+	color: #f40;
+}
+nav{
+	width: 100%;
+	height: 100px;
+}
+.nav{
+	position: relative;
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+}
+.logo{
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	display: inline-block;
+	background-color: #f40;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.sider{
+	position: absolute;
+	left: 225px;
+	display: inline-block;
+}
+.sider em{
+	float: left;
+	font-style: normal;
+	display: inline-block;
+	line-height: 100px;
+	padding-left: 16px;
+	cursor: pointer;
+}
+.sider em:hover{
+	color: #f40;
+}
+.search{
+	display: inline-block;
+	float: right;
+	margin-top: 25px;
+}
+.text{
+	width: 245px;
+	height: 50px;
+	float: left;
+	border: 1px solid #e0e0e0;
+	outline: none;
+	font-size: 20px;
+	padding-left: 10px;
+}
+.submit{
+	width: 50px;
+	height: 52px;
+	float: left;
+	background:url(./image/搜索.png);
+	background-size: 40% 40%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 1px solid #e0e0e0;
+}
+.submit:hover{
+	background-color: #f40;
+}
+.news{
+	position: absolute;
+	width: 100%;
+	height: 230px;
+	overflow: hidden;
+}
+.newBar{
+	position: absolute;
+	width: 100%;
+	height: 230px;
+	background-color: #fff;
+	outline: 1px solid #e0e0e0;
+	z-index: 100;
+	transform: translateY(-230px);
+}
+main{
+	position: relative;
+	width: 1200px;
+	height: 800px;
+	margin: 0 auto;
+}
+.banner{
+   	width: 1200px;
+	height: 460px;
+}
+.leftSideBar{
+	position: absolute;
+	width: 235px;
+	height: 420px;
+	background-color: rgba(0,0,0,0.6);
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.tab{
+	width: 205px;
+	height: 10%;
+	padding-left: 30px;
+	color: #fff;
+	line-height: 42px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.tab:hover{
+	background-color: #f40;
+}
+.leftSideBar .tab img{
+	float: right;
+	margin-right: 20px;
+	margin-top: 14px;
+	width: 15px;
+	height: 15px;
+}
+.centerBtn{
+	position: absolute;
+	left: 1070px;
+	top: 420px;
+	width: 100px;
+	height: 20px;
+}
+.centerBtn div{
+	width: 6px;
+	height: 6px;
+	border:2px solid gray;
+	float: right;
+	margin-top: 4px;
+	margin-left: 10px;
+	border-radius: 50%;
+	background-color: gray;
+}
+.centerBtn div:hover{
+	background-color: #fff;
+}
+.banner img{
+   	height: 460px;
+}
+.scroll{  	
+   	width: 1200px;
+	height: 460px;
+	white-space: nowrap;
+	overflow: hidden;
+    cursor: pointer;
+}
+.rightBtn{
+    position: absolute;
+    left: 1160px;
+    top: 200px;
+    width: 40px;
+    height: 70px;
+}
+.leftBtn{
+    position: absolute;
+    left: 235px;
+    top: 200px;
+    width: 40px;
+    height: 70px;
+}
+.rightBtn:hover,.leftBtn:hover {
+	background-color: gray;
+}
+.leftBtn .leftImg,
+.rightBtn .rightImg{
+	width: 100%;
+	height: 40%;
+	margin-top: 21px;
+}
+.service{
+	float: left;
+	margin-top: 15px;
+	width: 234px;
+	height: 170px;
+	background-color: #5f5750;
+	cursor: pointer;
+}
+.list{
+	width: 78px;
+	height: 85px;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	color:#e6e6e6;
+}
+.list img{
+	width: 30%;
+	height: 30%;
+	margin-top: 20px;
+	color: #fff;
+}
+.hot{
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+	width:307px;
+	height: 170px;
+	cursor: pointer;
+}
+.hot img{
+	width: 100%;
+	height: 100%;
+}
+.hotest{
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	width: 1200px;
+	height: 120px;
+	cursor: pointer;
+}
+.hotest img{
+	width: 100%;
+	height: 100%;
+}
+.counter{
+	float: left;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+.phone{
+	width: 1200px;
+	height: 700px;
+	margin:0 auto;
+}
+.phoneHeader{
+	width: 1200px;
+	height: 80px;
+
+}
+.title{
+	float: left;
+	font-weight: 200;
+	font-size: 22px;
+	line-height: 80px;
+}
+.more{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.more .img{
+	float: right;	
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #b0b0b0;
+}
+.img img{
+	float: right;
+	margin-top: 5px;
+	margin-right: 4px;
+	width: 10px;
+}
+.more:hover {
+	color: #f40;
+}
+.more:hover .img{
+	background-color: #f40;
+}
+.shop1,.shop2{
+	float: left;
+	width: 230px;
+
+}
+.shop2{
+	height: 300px;
+	background-color: #fff;
+	margin-bottom: 12px; 
+	margin-left: 12px;
+
+}
+.shop1:hover,
+.shop2:hover{
+	transform: translateY(-4px);
+	transition: 0.3s;
+	box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
+}
+.shop1 img{
+	width: 230px;
+	height: 615px;
+	cursor: pointer;
+}
+.shop2 img{
+	width: 160px;
+	height: 160px;
+	margin-left: 37.5px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.preferential1,
+.preferential2,
+.preferential3{
+	width: 65px;
+	height: 20px;
+	margin:0 auto;
+	line-height: 20px;
+	text-align: center;
+	font-size: 12px;
+}
+.preferential1{
+	color: #fff;
+	background-color: #83c44e;
+}
+.preferential2{
+	color: #fff;
+	background-color: #e53935;
+}
+.name{
+	text-align: center;
+	font-size: 14px;
+}
+.advantage{
+	height: 16px;
+	margin-top: 2px;
+	text-align: center;
+	font-size: 12px;
+	color: #b0b0b0;
+}
+.price{
+    width: 110px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	color: #ff6700;
+	margin: 10px 26%;
+}
+.price div{
+	width: 55px;
+	float: right;
+	text-decoration: line-through;
+	color: #b0b0b0;
+}
+.hotBanner{
+	width: 1200px;
+	margin: 45px auto;
+	cursor: pointer;
+}
+.hotBanner img{
+	width: 1200px;
+}
+.sidenav{
+	position: fixed;
+	right: 0;
+	top: 300px;
+	width: 80px;
+	height: 450px;
+	z-index: 200;
+}
+.houseHeader{
+	width: 1200px;
+	height: 80px;
+}
+.house{
+	width: 1200px;
+	height: 700px;
+	margin:0 auto;
+}
+
+.others{
+	float: right;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.other{
+	display: inline-block;
+	margin-left: 25px;
+}
+.leftImage,.rightImage{
+	float: left;
+}
+.image{
+	float: left;
+	width: 230px;
+	height: 300px;
+	background-color: #fff;
+	margin-bottom: 12px; 
+	margin-left: 12px; 
+}
+.leftImage .image{
+	margin-left: 0;
+}
+.leftImage img{
+    width: 100%;
+    height: 100%; 
+}
+.leftImage{
+	width: 230px;
+	height:615px;
+}
+.rightImage{
+	width: 970px;
+	height:615px;
+}
+.rightImage img{
+	width: 160px;
+	height: 160px;
+	margin-left: 37.5px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.smallImg{
+	float: left;
+	width: 230px;
+	height: 144px;
+	background-color: #fff;
+	margin-bottom: 12px; 
+	margin-left: 12px;
+}.smallImg img{
+	float: right;
+	width: 80px;
+	height: 80px;
+
+}
+.image:hover,
+.smallImg:hover{
+	transform: translateY(-4px);
+	transition: 0.3s;
+	box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
+}
+.rightImg2,.rightImg3,.rightImg4{
+	display: none;
+}
+.intelligenceHeader{
+	width: 1200px;
+	height: 80px;
+}
+.intelligence{
+	width: 1200px;
+	height: 700px;
+	margin:0 auto;
+}
+.sidenav div{
+	width: 80px;
+	height: 90px;
+	outline: 1px solid #f2f2f2;
+	background-color: #fff;
+	text-align: center;
+	cursor:pointer;
+}
+.sidenav img{
+	width: 30px;
+	margin-top: 20px;
+}
+.sidenav em{
+	font-style: normal;
+	display: block;
+	font-size: 14px;
+}
+.sidenav em:hover {
+	color: #f40;
+}

@@ -1,0 +1,120 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow-y: scroll;
+	min-width: 1000px;
+
+}
+.demo{
+	height: 33px;
+	border:1px solid #f0f0f0;
+	position: relative;
+	
+}
+.demo1{
+	height: 33px;
+	width: 35%;
+	line-height: 33px;
+    font-size: 12px;
+}
+.demo1 em,a{
+    font-style: normal;
+	color: #555;   
+}
+.demo1>a{
+	text-decoration: none;
+}
+.demo2{
+	height: 33px;
+	width: 65%;
+	position: absolute;
+	left: 35%;
+	top: 0;
+	font-weight: bold;
+	font-size: 13px;
+   
+} 
+.demo2 em{
+	font-weight: normal;
+}
+.demo3 {
+	height: 33px;
+	width: 86px;
+	background-color: #38f;
+	float: right; 
+	text-align: center;
+    clear: both;
+    font-weight: normal;
+	
+}
+
+.demo3 a{
+	text-decoration: none;
+}
+#demo4{
+	color: #fff;
+	overflow: scroll;
+
+}
+.demo5 {
+     display: none;
+     width: 85px;
+	height: 890px;
+    font-size: 13px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #f0f0f0;
+    text-decoration: none;
+    line-height: normal;
+}
+ .demo5 li{
+	list-style-type: none;
+    background-color: #f9f9f9;
+	border: 1px solid #f0f0f0;
+	text-align: center;
+	height: 77px;	
+}
+.demo5 img{
+	width: 36px;
+	margin-top: 10px;
+    margin-left: 10px;
+}
+    
+
+.demo3:hover .demo5{
+	display: block;
+}
+.demo3:hover {
+	background-color: #f9f9f9;
+}
+.demo3:hover #demo4{
+	color: black;
+}
+.demo6{
+	text-align: center;
+}
+.demo6 img{
+	width:270px;
+	height:129px;
+	margin-top: 58px;
+	cursor: pointer;
+
+}
+.demo8{
+	width: 540px;
+	height: 39px;
+	padding-left: 5px;
+	vertical-align: bottom;
+}
+.demo9{
+	width: 102px;
+	height: 39px;
+	border:initial;
+	border:1px solid #398bfb;
+	background-color: #398bfb;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}

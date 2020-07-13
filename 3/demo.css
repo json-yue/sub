@@ -1,0 +1,202 @@
+/*去除浏览器自带的内外边距*/
+*{
+	margin:0;
+	padding: 0;
+}
+/*为页面整体添加背景*/
+body{
+	scroll-behavior: smooth;/*使页面平滑滚动*/
+	background: #fff url(./image/bg4.jpg) repeat-x/*水平重复*/;
+}
+header{
+	position: relative;/*相对定位*/
+	width: 1000px;/*宽度*/
+	height: 45px;/*高度*/
+	margin:0 auto;/*使元素水平居中*/
+	background:url(./image/bg.jpg) no-repeat/*不重复*/;
+	background-size: 100% 100%;/*背景图片宽高适应元素*/
+}
+header li{
+	cursor: pointer;/*鼠标样式变小手*/
+	list-style: none;/*去除无序列表再带样式*/
+	float: left;/*左浮动*/
+	line-height: 45px;/*行高与元素高度相等使之垂直居中*/
+	margin: 0 40px;
+	color: #969547;/*字体颜色*/
+}
+/*选出第一个li元素并为其更改颜色*/
+header li:nth-child(1){
+	color: #fcf88e;
+}
+/*悬停改变字体颜色*/
+header li:hover{
+	color: #fcf88e; 
+}
+header .newBook{
+	position: absolute;/*绝对定位*/
+	top: 45px;
+	right: 0;
+	width: 250px;
+	height: 180px;
+	opacity: 0;/*透明度*/
+	background:url(./image/bg.jpg);
+	transition: all 2s;/*增加缓动*/
+}
+header .newBook li{
+	margin:0;
+	color: #969547; 
+}
+/*兄弟元素只有hover+才能产生效果*/
+header li:nth-child(7):hover+ .newBook{
+	z-index: 999;/*增加层级，使其悬停后可以出现*/
+	opacity: 1;
+}
+.newBook:hover{
+	z-index: 999;
+	opacity: 1;
+}
+header .newBook li:hover{
+	color: #fcf88e;
+}
+main{
+	width: 1000px;
+	height: 1600px;
+	margin:0 auto;
+	background:url(./image/bg1.jpg);
+}
+main .logo{
+	position: relative;
+	padding: 20px;/*内边距*/
+	width: 960px;
+	height: 140px;
+	color: #fcf88e;
+}
+.logo h2{
+	line-height: 80px;
+	font-size: 30px;/*字体大小*/
+	font-weight: 400;/*字体粗细*/
+}
+.logo p{
+	width: 500px;
+}
+.newBook li{
+	cursor: pointer;
+	list-style: none;
+	width: 170px;
+	padding: 0 40px;
+	height: 45px;
+	line-height: 45px;
+}
+.main{
+	position: relative;
+	width: 1000px;
+	height: 400px;
+	margin:0 auto;
+}
+.main nav{
+	padding:20px 0;
+	width: 200px;
+	height: 360px;
+	float: left;
+	background:url(./image/bg3.jpg);
+}
+nav div{
+	color: #fff;
+	padding: 0 10px;
+	font-size: 12px;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+}
+/*鼠标悬停改变背景图片*/
+nav div:hover{
+	background:url(./image/bg.jpg);
+}
+/*绝对定位，固定图片位置*/
+nav img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 800px;
+	height: 400px;
+}
+/*通过悬停改变层级来达到切换图片的效果*/
+nav div:hover+ img{
+	z-index: 999;
+}
+nav img:hover{
+	z-index: 999;
+}
+.content{
+	clear: both;/*清除浮动*/
+	text-align: center;/*文字居中*/
+
+}
+.content h3{
+	cursor: pointer;
+	display: inline-block;/*使元素变为行级块元素*/
+	margin: 30px;/*外边距*/
+	padding: 20px;/*内边距*/
+	background:url(./image/bg.jpg);
+}
+.answer p:hover,
+.content h3:hover{
+	transition: all 1s;
+	transform: rotateX(360deg);/*沿X轴旋转360度*/
+}
+.content .book{
+	float: left;
+	width: 300px;
+	height: 168px;
+	margin:16.6px;
+	overflow: hidden;/*超出部分隐藏*/
+}
+.book img{
+	transition: 1s;
+	width: 300px;
+}
+.book img:hover{
+	transform: scale(1.3);/*放大1.3倍*/
+}
+.content .answer{
+	width: 1000px;
+	margin:0 auto;
+}
+.answer p{
+	float: left;
+	width: 500px;
+	margin-bottom: 30px;/*底部外边距*/
+	height: 70px;
+	line-height: 70px;
+	font-size: 18px;
+	color: #fcf88e;
+	background:url(./image/bg2.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+footer{
+	width: 1000px;
+	height: 100px;
+	margin:0 auto;
+    background:url(./image/bg.jpg);
+    background-size: 100% 100%;
+}
+footer p{
+	color: #fff;
+	width: 500px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	float: left;
+}
+footer p a{
+	color: #fff;
+	text-decoration: none;/*去除超链接自带的下划线*/
+}
+footer p a:hover{
+	text-decoration: underline;/*增加下划线*/
+	color: red;
+}
+.end:hover{
+	cursor: pointer;
+	color: red;
+}

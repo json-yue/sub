@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>布局</title>
+	<link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+	<header>
+		<div class="head">
+			<div class="logo"></div>
+			<div class="nav"></div>
+		</div>
+	</header>
+	<main>
+		<div class="box">
+		    <div class="scroll">
+		    	<div class="scrollMain">
+		    	    <div class="img1"></div>
+		    	    <div class="img2"></div>
+		    	    <div class="img3"></div>
+		    	</div>
+		    </div>
+		    <div class="article"></div>
+	    </div>
+		<div class="aside"></div>
+	</main>
+	<footer></footer>
+</body>
+<script>
+	var sum = 0;
+	var scrollMain = document.getElementsByClassName("scrollMain")[0];
+	function a() {
+		scrollMain.style.left = sum + "px";
+		sum = sum - 800;
+		if(sum == -2400){
+			sum = 0;
+		}
+	}
+	setInterval(a,1000);
+</script>
+</html>
